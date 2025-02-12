@@ -4,7 +4,7 @@
   "type": "library",
   "autoload": {
     "psr-4": {
-      "Framework\\Core\\": "src/"
+      "app\\core\\": "src/"
     }
   },
   "require": {
