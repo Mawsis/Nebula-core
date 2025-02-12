@@ -2,6 +2,8 @@
   "name": "mawsis/nebula-php",
   "description": "The core of my PHP framework",
   "type": "library",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
   "autoload": {
     "psr-4": {
       "app\\core\\": "src/"
