@@ -1,0 +1,16 @@
+{
+  "name": "mawsis/nebula-php",
+  "description": "The core of my PHP framework",
+  "type": "library",
+  "autoload": {
+    "psr-4": {
+      "Framework\\Core\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=8.0",
+    "vlucas/phpdotenv": "^5.6",
+    "monolog/monolog": "^3.8",
+    "firebase/php-jwt": "^6.11"
+  }
+}
