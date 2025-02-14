@@ -1,9 +1,9 @@
 <?php
 
-namespace app\core;
+namespace Nebula\Core;
 
-use app\core\exceptions\NotFoundException;
-use app\core\middlewares\BaseMiddleware;
+use Nebula\Core\exceptions\NotFoundException;
+use Nebula\Core\middlewares\BaseMiddleware;
 
 class Router
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace app\core;
+namespace Nebula\Core;
 
-use app\core\facades\DB;
+use Nebula\Core\facades\DB;
 use PDO;
 
 abstract class DbModel

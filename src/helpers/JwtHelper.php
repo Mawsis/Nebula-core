@@ -1,10 +1,10 @@
 <?php
 
-namespace app\core\helpers;
+namespace Nebula\Core\helpers;
 
 use Firebase\JWT\JWT;
 use Firebase\JWT\Key;
-use app\core\Config;
+use Nebula\Core\Config;
 
 class JwtHelper
 {

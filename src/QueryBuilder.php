@@ -1,8 +1,8 @@
 <?php
 
-namespace app\core;
+namespace Nebula\Core;
 
-use app\core\facades\DB;
+use Nebula\Core\facades\DB;
 use PDO;
 
 class QueryBuilder
@@ -23,10 +23,10 @@ class QueryBuilder
 
     public function __construct(string $modelClass)
     {
-        $this->table = str_contains($modelClass, "app\\models") ?
+        $this->table = str_contains($modelClass, "App\\Models") ?
             $modelClass::tableName() :
             $modelClass;
-        $this->isClass = str_contains($modelClass, "app\\models");
+        $this->isClass = str_contains($modelClass, "App\\Models");
         $this->modelClass = $modelClass;
     }
 

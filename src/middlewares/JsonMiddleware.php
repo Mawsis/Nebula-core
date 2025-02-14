@@ -1,7 +1,8 @@
 <?php
-namespace app\core\middlewares;
 
-use app\core\Application;
+namespace Nebula\Core\middlewares;
+
+use Nebula\Core\Application;
 
 class JsonMiddleware extends BaseMiddleware
 {

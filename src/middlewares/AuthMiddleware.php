@@ -1,11 +1,11 @@
 <?php
 
-namespace app\core\middlewares;
+namespace Nebula\Core\middlewares;
 
-use app\core\Application;
-use app\core\exceptions\ForbiddenException;
-use app\core\exceptions\UnauthorizedException;
-use app\core\facades\Auth;
+use Nebula\Core\Application;
+use Nebula\Core\exceptions\ForbiddenException;
+use Nebula\Core\exceptions\UnauthorizedException;
+use Nebula\Core\facades\Auth;
 
 class AuthMiddleware extends BaseMiddleware
 {

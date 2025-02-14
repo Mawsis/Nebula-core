@@ -1,8 +1,8 @@
 <?php
 
-namespace app\core;
+namespace Nebula\Core;
 
-use app\core\middlewares\BaseMiddleware;
+use Nebula\Core\middlewares\BaseMiddleware;
 
 
 class Controller

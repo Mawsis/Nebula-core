@@ -1,9 +1,9 @@
 <?php
 
-namespace app\core;
+namespace Nebula\Core;
 
-use app\core\exceptions\DatabaseException;
-use app\core\facades\Logger;
+use Nebula\Core\exceptions\DatabaseException;
+use Nebula\Core\facades\Logger;
 use PDO;
 
 class Database

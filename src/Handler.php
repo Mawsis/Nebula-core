@@ -1,13 +1,13 @@
 <?php
 
-namespace app\core;
+namespace Nebula\Core;
 
-use app\core\exceptions\ValidationException;
-use app\core\exceptions\DatabaseException;
-use app\core\exceptions\UnauthorizedException;
-use app\core\exceptions\ForbiddenException;
-use app\core\exceptions\NotFoundException;
-use app\core\facades\Logger;
+use Nebula\Core\exceptions\ValidationException;
+use Nebula\Core\exceptions\DatabaseException;
+use Nebula\Core\exceptions\UnauthorizedException;
+use Nebula\Core\exceptions\ForbiddenException;
+use Nebula\Core\exceptions\NotFoundException;
+use Nebula\Core\facades\Logger;
 use Throwable;
 
 class Handler

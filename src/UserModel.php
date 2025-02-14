@@ -1,6 +1,6 @@
 <?php
 
-namespace app\core;
+namespace Nebula\Core;
 
 abstract class UserModel extends DbModel
 {

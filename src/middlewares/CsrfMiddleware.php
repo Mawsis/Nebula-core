@@ -1,5 +1,6 @@
 <?php
-namespace app\core\middlewares;
+
+namespace Nebula\Core\middlewares;
 
 class CsrfMiddleware extends BaseMiddleware
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace app\core\middlewares;
+namespace Nebula\Core\middlewares;
 
-use app\core\Config;
+use Nebula\Core\Config;
 
 class CorsMiddleware extends BaseMiddleware
 {

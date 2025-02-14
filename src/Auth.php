@@ -1,9 +1,8 @@
 <?php
 
-namespace app\core;
+namespace Nebula\Core;
 
-use app\core\facades\Session;
-use app\models\User;
+use Nebula\Core\facades\Session;
 
 class Auth
 {

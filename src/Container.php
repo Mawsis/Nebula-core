@@ -1,7 +1,7 @@
 <?php
 
 // src/Container.php
-namespace app\core;
+namespace Nebula\Core;
 
 class Container
 {

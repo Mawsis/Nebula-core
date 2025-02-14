@@ -1,5 +1,6 @@
 <?php
-namespace app\core;
+
+namespace Nebula\Core;
 
 use Monolog\Logger as MonologLogger;
 use Monolog\Handler\StreamHandler;

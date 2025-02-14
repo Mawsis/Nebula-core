@@ -1,8 +1,8 @@
 <?php
 
-namespace app\core;
+namespace Nebula\Core;
 
-use app\core\exceptions\ValidationException;
+use Nebula\Core\exceptions\ValidationException;
 use Exception;
 
 #[\AllowDynamicProperties]

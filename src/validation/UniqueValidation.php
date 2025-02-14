@@ -1,9 +1,9 @@
 <?php
 
-namespace app\core\validation;
+namespace Nebula\Core\validation;
 
-use app\core\BaseValidation;
-use app\core\QueryBuilder;
+use Nebula\Core\BaseValidation;
+use Nebula\Core\QueryBuilder;
 
 class UniqueValidation extends BaseValidation
 {

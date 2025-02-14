@@ -1,8 +1,8 @@
 <?php
 
-namespace app\core\facades;
+namespace Nebula\Core\facades;
 
-use app\core\Container;
+use Nebula\Core\Container;
 
 class Session extends Facade
 {

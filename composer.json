@@ -6,7 +6,7 @@
   "prefer-stable": true,
   "autoload": {
     "psr-4": {
-      "app\\core\\": "src/"
+      "Nebula\\Core\\": "src/"
     }
   },
   "require": {

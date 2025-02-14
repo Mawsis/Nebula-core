@@ -1,5 +1,8 @@
 <?php
-namespace app\core\middlewares;
-abstract class BaseMiddleware{
+
+namespace Nebula\Core\middlewares;
+
+abstract class BaseMiddleware
+{
     public abstract function execute();
 }

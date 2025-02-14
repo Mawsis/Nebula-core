@@ -1,11 +1,10 @@
 <?php
 
-namespace app\core\middlewares;
+namespace Nebula\Core\middlewares;
 
-use app\core\helpers\JwtHelper;
-use app\core\Request;
-use app\core\Response;
-use app\models\User;
+use Nebula\Core\helpers\JwtHelper;
+use Nebula\Core\Request;
+use Nebula\Core\Response;
 
 class JwtMiddleware extends BaseMiddleware
 {
@@ -13,22 +12,22 @@ class JwtMiddleware extends BaseMiddleware
     {
         $headers = getallheaders();
         if (!isset($headers['Authorization'])) {
-            throw new \app\core\exceptions\UnauthorizedException();
+            throw new \Nebula\Core\exceptions\UnauthorizedException();
         }
 
         $token = str_replace('Bearer ', '', $headers['Authorization']);
         $decoded = JwtHelper::verifyToken($token);
 
         if (!$decoded) {
-            throw new \app\core\exceptions\UnauthorizedException();
+            throw new \Nebula\Core\exceptions\UnauthorizedException();
         }
 
         // Attach user to request
-        $user = User::findOne(['id' => $decoded->sub]);
-        if (!$user) {
-            throw new \app\core\exceptions\UnauthorizedException();
-        }
+        // $user = User::findOne(['id' => $decoded->sub]);
+        // if (!$user) {
+        //     throw new \Nebula\Core\exceptions\UnauthorizedException();
+        // }
 
-        $_SESSION['user'] = $user->id;
+        // $_SESSION['user'] = $user->id;
     }
 }

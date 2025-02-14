@@ -1,11 +1,10 @@
 <?php
 
-namespace app\core;
+namespace Nebula\Core;
 
-use app\core\facades\Handler;
-use app\core\facades\Logger;
-use app\core\middlewares\CorsMiddleware;
-use app\providers\AppServiceProvider;
+use Nebula\Core\facades\Handler;
+use Nebula\Core\facades\Logger;
+use Nebula\Core\middlewares\CorsMiddleware;
 use Exception;
 
 class Application

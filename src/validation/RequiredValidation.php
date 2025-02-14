@@ -1,8 +1,8 @@
 <?php
 
-namespace app\core\validation;
+namespace Nebula\Core\validation;
 
-use app\core\BaseValidation;
+use Nebula\Core\BaseValidation;
 
 class RequiredValidation extends BaseValidation
 {
