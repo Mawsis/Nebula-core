@@ -41,7 +41,10 @@ class Router
         if (!$callback) {
             throw new NotFoundException();
         }
-
+        if ($callback instanceof \Closure) {
+            $dependencies = $this->resolveClosureDependencies($callback);
+            return call_user_func_array($callback, $dependencies);
+        }
         $this->executeMiddlewares($method, is_array($callback[1]) ? $callback[0] : $path);
 
         if (is_array($callback[1])) {
@@ -146,5 +149,31 @@ class Router
             }
         }
         return array_merge($dependencies, $params);
+    }
+    private function resolveClosureDependencies(\Closure $callback): array
+    {
+        $reflection = new \ReflectionFunction($callback);
+        $dependencies = [];
+
+        foreach ($reflection->getParameters() as $param) {
+            $type = $param->getType();
+            if ($type && !$type->isBuiltin()) {
+                $className = $type->getName();
+
+                if ($className === Request::class) {
+                    $dependencies[] = $this->request;
+                } elseif ($className === Response::class) {
+                    $dependencies[] = $this->response;
+                } elseif (class_exists($className)) {
+                    $dependencies[] = new $className(); // Create instance for other classes
+                } else {
+                    $dependencies[] = null;
+                }
+            } else {
+                $dependencies[] = null;
+            }
+        }
+
+        return $dependencies;
     }
 }
