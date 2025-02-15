@@ -2,7 +2,7 @@
 
 namespace Nebula\Core;
 
-use Nebula\Core\middlewares\BaseMiddleware;
+use Nebula\Core\Middlewares\BaseMiddleware;
 
 
 class Controller

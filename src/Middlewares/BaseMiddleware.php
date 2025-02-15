@@ -1,6 +1,6 @@
 <?php
 
-namespace Nebula\Core\middlewares;
+namespace Nebula\Core\Middlewares;
 
 abstract class BaseMiddleware
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Nebula\Core\exceptions;
+namespace Nebula\Core\Exceptions;
 
 use Exception;
 

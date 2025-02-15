@@ -2,8 +2,8 @@
 
 namespace Nebula\Core;
 
-use Nebula\Core\exceptions\NotFoundException;
-use Nebula\Core\middlewares\BaseMiddleware;
+use Nebula\Core\Exceptions\NotFoundException;
+use Nebula\Core\Middlewares\BaseMiddleware;
 
 class Router
 {

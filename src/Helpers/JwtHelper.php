@@ -1,6 +1,6 @@
 <?php
 
-namespace Nebula\Core\helpers;
+namespace Nebula\Core\Helpers;
 
 use Firebase\JWT\JWT;
 use Firebase\JWT\Key;

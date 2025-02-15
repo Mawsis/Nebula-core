@@ -2,7 +2,7 @@
 
 namespace Nebula\Core;
 
-use Nebula\Core\facades\Session;
+use Nebula\Core\Facades\Session;
 
 class Auth
 {

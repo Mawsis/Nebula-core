@@ -2,9 +2,9 @@
 
 namespace Nebula\Core;
 
-use Nebula\Core\facades\Handler;
-use Nebula\Core\facades\Logger;
-use Nebula\Core\middlewares\CorsMiddleware;
+use Nebula\Core\Facades\Handler;
+use Nebula\Core\Facades\Logger;
+use Nebula\Core\Middlewares\CorsMiddleware;
 use Exception;
 
 class Application

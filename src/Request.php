@@ -2,7 +2,7 @@
 
 namespace Nebula\Core;
 
-use Nebula\Core\exceptions\ValidationException;
+use Nebula\Core\Exceptions\ValidationException;
 use Exception;
 
 #[\AllowDynamicProperties]

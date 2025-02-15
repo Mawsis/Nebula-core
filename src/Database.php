@@ -2,8 +2,8 @@
 
 namespace Nebula\Core;
 
-use Nebula\Core\exceptions\DatabaseException;
-use Nebula\Core\facades\Logger;
+use Nebula\Core\Exceptions\DatabaseException;
+use Nebula\Core\Facades\Logger;
 use PDO;
 
 class Database

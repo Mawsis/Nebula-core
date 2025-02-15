@@ -2,7 +2,7 @@
 
 namespace Nebula\Core;
 
-use Nebula\Core\facades\DB;
+use Nebula\Core\Facades\DB;
 use PDO;
 
 class QueryBuilder

@@ -1,13 +1,13 @@
 <?php
 
-namespace Nebula\Core\facades;
+namespace Nebula\Core\Facades;
 
 use Nebula\Core\Container;
 
-class DB extends Facade
+class Route extends Facade
 {
     public static function getFacadeAccessor()
     {
-        return 'db';
+        return 'route';
     }
 }

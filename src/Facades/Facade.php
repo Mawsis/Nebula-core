@@ -1,6 +1,6 @@
 <?php
 
-namespace Nebula\Core\facades;
+namespace Nebula\Core\Facades;
 
 use Nebula\Core\Container;
 

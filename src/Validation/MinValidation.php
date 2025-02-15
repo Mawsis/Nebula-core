@@ -1,6 +1,6 @@
 <?php
 
-namespace Nebula\Core\validation;
+namespace Nebula\Core\Validation;
 
 use Nebula\Core\BaseValidation;
 
