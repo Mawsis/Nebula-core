@@ -90,7 +90,7 @@ class Application
                 'line' => $exception->getLine(),
                 'trace' => $exception->getTraceAsString()
             ];
-            require_once __DIR__ . "/../views/errors/fatal.php";
+            require_once __DIR__ . "./Views/fatal.php";
             exit;
         });
     }
