@@ -67,7 +67,7 @@ class Application
                 // Pass error details to the fatal view
                 global $caughtError;
                 $caughtError = $error;
-                require_once __DIR__ . "./Views/fatal.php";
+                require_once __DIR__ . "/Views/fatal.php";
                 exit;
             }
         });
@@ -90,7 +90,7 @@ class Application
                 'line' => $exception->getLine(),
                 'trace' => $exception->getTraceAsString()
             ];
-            require_once __DIR__ . "./Views/fatal.php";
+            require_once __DIR__ . "/Views/fatal.php";
             exit;
         });
     }
